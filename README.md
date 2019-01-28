@@ -1,7 +1,7 @@
 # iTunes Albums Search App
 Easy Angular Prime Album for iTunes
 
-![screenshot of sample](https://github.com/berryfinn/itunes-album-angular-prime/blob/master/screenshots/album3.gif)
+![screenshot of sample](https://github.com/berryfinn/itunes-album-angular-prime/blob/master/screenshots/album2.gif)
 
 ### In using:
 * Angular 6
