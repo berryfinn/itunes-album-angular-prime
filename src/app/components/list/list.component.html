@@ -1,0 +1,20 @@
+<p-dataView [value]="albums">
+    <p-header> {{ columnTitle }} </p-header>
+    <ng-template let-album pTemplate="listItem">
+      <div class="list">
+        <div>
+          {{album.collectionName}}
+        </div>
+        <div [hidden]="!search">
+          <p-button label="Add to playlist" (click)="addAlbum(album)"></p-button>
+        </div>
+        <div [hidden]="search">
+            <p-button label="Delete album" (click)="deleteAlbum(album)"></p-button>
+          </div>    
+      </div>
+    </ng-template>
+  </p-dataView>
+
+ 
+
+

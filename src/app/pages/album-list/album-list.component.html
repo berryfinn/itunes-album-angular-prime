@@ -1,0 +1,18 @@
+<p-growl [(value)]="msgs"></p-growl>
+
+<div id="tabs">
+  <p-tabMenu [model]="items" [activeItem]="items[0]"></p-tabMenu>
+</div>
+
+<div class="ui-g ui-fluid">
+  <div id="search" class="ui-g-12 ui-md-6" [hidden]="!search">
+    <div class="ui-inputgroup">
+      <input type="text" [(ngModel)]="term" pInputText placeholder="Type album name or part of name">
+      <button pButton type="button" label="Search" (click)="searchAlbums(term)"></button>
+    </div>
+  </div>
+</div>
+
+<app-list *ngIf="search" [columnTitle]="title1" [albums]="albums" [search]="search"></app-list>
+
+<app-list [columnTitle]="title2" [albums]="myAlbums" [hidden]="search" [search]="search"></app-list>
