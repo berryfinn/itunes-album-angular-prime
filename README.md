@@ -1,5 +1,4 @@
 # iTunes Albums Search App
-Easy Angular Prime Album for iTunes
 
 It is a simple application that lets you download albums from the Apple iTunes API, add and remove them to your playlist. 
 
